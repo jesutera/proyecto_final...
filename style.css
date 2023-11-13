@@ -1,1 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(images/background1.jpg) center / cover no-repeat;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.navbar .logo img{
+    width: 40px;
+}
+
+.navbar .logo h2{
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navbar .links{
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.navbar .links a{
+    text-decoration: none;
+    font-size: 1 rem;
+    font-weight: 500;
+}
