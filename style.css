@@ -75,3 +75,70 @@ header{
     background: #fff;
     cursor: pointer;
 }
+
+.form-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;
+    width: 100%;
+    background: #fff;
+    border: 2 px solid #4d4d4d;
+    transform: translate(-50%, -50%);
+}
+
+.form-popup .form-box {
+    display: flex;
+}
+
+.form-box .form-details{
+    max-width: 330px;
+}
+
+.form-box h2 {
+    text-align: center;
+    margin-bottom:30px;
+}
+
+.form-box .form-content {
+    width: 100%;
+    padding:35px;
+}
+
+form .input-field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+form .input-field input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding: 0 15px;
+    font-size: 0.95rem;
+    border-radius: 3px;
+    border: 1px solid #717171;
+}
+
+.input-field input:is(:focus, :valid) {
+    padding: 16px 15px 0 ;
+}
+
+
+form .input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    color:#717171;
+    pointer-events: none;
+    transform: translateY(-50% );
+    transition: 0.5s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ label {
+    font-size: 0.75rem;
+    color: aqua;
+    transform: translateY(-120% );
+}
