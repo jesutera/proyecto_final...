@@ -112,6 +112,7 @@ header{
 .form-box .form-details{
     max-width: 330px;
     display: flex;
+    padding: 0 20px;
     color:rgba(0, 97, 139, 0.872);
     width: 100%;
     text-align: center;
@@ -188,7 +189,7 @@ form .input-field label{
     text-decoration: underline;
 }
 
-.form-box .forgot-pass{
+.form-box :where(.forgot-pass, .policy-text) {
     display: inline-flex;
     margin-top: 14px;
     font-size: 0.95rem;
@@ -216,4 +217,22 @@ form button:hover {
 
 .form-box .bottom-link {
     text-align: center;
+}
+
+.form-popup .signup {
+    display: none;
+}
+
+
+
+
+.signup .policy-text {
+    display: flex;
+    align-items: center;
+}
+
+.signup .policy-text input {
+    width: 100%;
+    height: 14px;
+    margin-right: 7px;
 }
