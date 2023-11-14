@@ -122,10 +122,10 @@ form .input-field input {
     border: 1px solid #717171;
 }
 
-.input-field input:is(:focus, :valid) {
-    padding: 16px 15px 0 ;
-}
 
+.input-field input:focus {
+    border-color: blueviolet;
+}
 
 form .input-field label{
     position: absolute;
@@ -141,4 +141,44 @@ form .input-field label{
     font-size: 0.75rem;
     color: aqua;
     transform: translateY(-120% );
+}
+
+.form-box a {
+    color: darkorange;
+    text-decoration: none;
+}
+
+.form-box a:hover {
+    text-decoration: underline;
+}
+
+.form-box .forgot-pass{
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 0.95rem;
+
+}
+
+form button{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 14px 0;
+    border-radius: 10px;
+    margin: 25px 0;
+    color: #fff;
+    background: rgba(30, 143, 255, 0.655);
+    transition: 0.2 ease;
+    
+}
+
+form button:hover {
+    background: forestgreen;
+}
+
+.form-box .bottom-link {
+    text-align: center;
+
 }
