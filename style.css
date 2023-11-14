@@ -93,6 +93,11 @@ header{
 
 .form-box .form-details{
     max-width: 330px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-box h2 {
@@ -171,7 +176,7 @@ form button{
     color: #fff;
     background: rgba(30, 143, 255, 0.655);
     transition: 0.2 ease;
-    
+
 }
 
 form button:hover {
