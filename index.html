@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login or Registratión</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;700&display=swap" rel="stylesheet">
@@ -29,13 +30,13 @@
     <!-- Popup form -->
     <div class="form-popup">
         <span class=" close-btn material-symbols-rounded"><img src="images/cerrar.png" alt=""></span>
-        <div class="form-box">
+        <div class="form-box login">
             <div class="form-details">
                 <h2>Bienvenido a tu gestor de tareas</h2>
                 <P>Por favor inicia sesión usando tu información personal</P>
             </div>
             <div class="form-content">
-                <h2>LOGIN </h2>
+                <h2>INICIAR SESIÓN </h2>
                 <form action="#">
                     <div class="input-field">
                         <input type="text" required>
@@ -54,29 +55,34 @@
                 </div>
             </div>
         </div>
-
-        <div class="form-box">
+        <div class="form-box signup">
             <div class="form-details">
-                <h2>Bienvenido a tu gestor de tareas</h2>
-                <P>Por favor inicia sesión usando tu información personal</P>
+                <h2>Crear cuenta</h2>
+                <P>Para ser parte de nuestro equipo, comienza llenando el siguiente formulario con tus credenciales</P>
             </div>
             <div class="form-content">
-                <h2>LOGIN </h2>
+                <h2>CREAR CUENTA </h2>
                 <form action="#">
                     <div class="input-field">
                         <input type="text" required>
-                        <label> E-mail</label>
+                        <label> Ingresa tu correo electrónico</label>
                     </div>
                     <div class="input-field">
                         <input type="password" required>
-                        <label>Contraseña</label>
+                        <label>Crear contraseña</label>
                     </div>
-                    <a href="#" class="forgot-pass">¿Has olvidado tu contraseña?</a>
-                    <button type="submit">Login</button>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            Estoy de acuerdo
+                            <a href="#">Términos & Condiciones</a>
+                        </label>
+                    </div>
+                    <button type="submit">Registrarse</button>
                 </form>
                 <div class="bottom-link">
-                    ¿No tienes una cuenta?
-                    <a href="#"> Registrarse</a>
+                    ¿Ya tengo una cuenta?
+                    <a href="#"> Ingresar</a>
                 </div>
             </div>
         </div>
