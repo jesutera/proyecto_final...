@@ -18,11 +18,13 @@ header{
     width: 100%;
     left: 0;
     top: 0;
+    padding: 0 10px;
 }
 
 .navbar{
     display: flex;
     align-items: center;
+    padding: 22px 0;
     max-width: 1200px;
     margin: 0 auto;
     justify-content: space-between;
@@ -37,11 +39,14 @@ header{
 
 .navbar .logo img{
     width: 40px;
+    border-radius: 50%;
+   background:  #fff;
 }
 
 .navbar .logo h2{
     font-size: 1.7rem;
     font-weight: 600;
+    color: black;
 }
 
 .navbar .links{
@@ -54,4 +59,19 @@ header{
     text-decoration: none;
     font-size: 1 rem;
     font-weight: 500;
+}
+
+.navbar .links a:hover{
+    color:dodgerblue;
+}
+
+.navbar .login-btn{
+    color:gray;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: 10px 18px;
+    border-radius: 31px;
+    background: #fff;
+    cursor: pointer;
 }
