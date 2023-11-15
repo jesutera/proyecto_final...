@@ -219,7 +219,6 @@ form .input-field label{
     display: inline-flex;
     margin-top: 14px;
     font-size: 0.95rem;
-
 }
 
 form button{
@@ -234,7 +233,6 @@ form button{
     color: #fff;
     background: rgba(30, 143, 255, 0.915);
     transition: 0.2 ease;
-
 }
 
 form button:hover {
@@ -245,8 +243,13 @@ form button:hover {
     text-align: center;
 }
 
-.form-popup .signup {
+.form-popup .signup, 
+.form-popup.show-signup .login {
     display: none;
+}
+
+.form-popup.show-signup .signup {
+    display: flex;
 }
 
 .signup .policy-text {
