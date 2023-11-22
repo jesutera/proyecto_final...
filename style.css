@@ -30,6 +30,11 @@ header{
     justify-content: space-between;
 }
 
+.navbar .menu-btn {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
 .navbar .logo{
     display: flex;
     align-items: center;
@@ -49,14 +54,21 @@ header{
 
 .navbar .logo h2{
     font-size: 1.7rem;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.785);
 }
 
 .navbar .links{
     display: flex;
     list-style: none;
     gap: 35px;
+}
+
+.navbar .links .close-btn {
+    color: #fff;
+    cursor: pointer;
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    font-size: 1.5rem;
 }
 
 .navbar .links a{
@@ -264,6 +276,11 @@ form button:hover {
 }
 
 @media (max-width: 700px) {
+    .navbar :is( .menu-btn, .links .close-btn) {
+        display: block;
+
+    }
+
     .navbar {
         padding: 15px 0;
     }
