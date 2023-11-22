@@ -43,9 +43,10 @@ header{
 }
 
 .navbar .logo img{
+    display: none;
     width: 40px;
-    border-radius: 50%;
-   background:  #fff;
+    border-radius: 5000%;
+    background:  #fff;
 }
 
 .logo img:hover{
@@ -72,6 +73,7 @@ header{
 }
 
 .navbar .links a{
+    color: #fff;
     text-decoration: none;
     font-size: 1 rem;
     font-weight: 500;
@@ -278,7 +280,6 @@ form button:hover {
 @media (max-width: 700px) {
     .navbar :is( .menu-btn, .links .close-btn) {
         display: block;
-
     }
 
     .navbar {
