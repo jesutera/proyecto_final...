@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:sans-serif, 'Times New Roman', Times, serif;
 }
 
 body {
@@ -29,32 +29,28 @@ header{
     margin: 0 auto;
     justify-content: space-between;
 }
-
 .navbar .menu-btn {
+    display: none;
     color: #fff;
     cursor: pointer;
     font-size: 1.5rem;
 }
 .navbar .logo{
     display: flex;
-    align-items: center;
     gap: 10px;
     text-decoration: none;
+    align-items: center;
 }
 
 .navbar .logo img{
-    display: none;
     width: 40px;
-    border-radius: 5000%;
-    background:  #fff;
-}
-
-.logo img:hover{
-    color: bisque;
+    border-radius: 50%;
 }
 
 .navbar .logo h2{
+    color: #000;
     font-size: 1.7rem;
+    font-weight: 600;
 }
 
 .navbar .links{
@@ -64,10 +60,11 @@ header{
 }
 
 .navbar .links .close-btn {
-    color: #fff;
+    display: none;
+    color: #000;
     cursor: pointer;
     position: absolute;
-    right: 18px;
+    right: 20px;
     top: 20px;
     font-size: 1.5rem;
 }
@@ -278,7 +275,7 @@ form button:hover {
 }
 
 @media (max-width: 700px) {
-    .navbar :is( .menu-btn, .links .close-btn) {
+    .navbar :is(.menu-btn, .links .close-btn) {
         display: block;
     }
 
@@ -296,7 +293,7 @@ form button:hover {
 
     .navbar .links {
         position: fixed;
-        left: 0;
+        left: -100;
         top: 0;
         width: 100%;
         height: 100vh;
@@ -318,8 +315,6 @@ form button:hover {
         padding: 7px 9px;
     }
 }
-
-
 
 @media (max-width: 760px) {
     .form-popup {
